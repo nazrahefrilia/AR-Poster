@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Merek </title>
+    <script src="aframe/library/aframe.min.js"></script>
+    <!-- include aframe-ar.js -->
+    <script src="aframe/library/aframe-ar.js"></script>
+    <!-- include text geometry -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <!-- Hide Debug UI -->
+    <!--
+    <style>
+        #arjsDebugUIContainer {
+            display: none;
+            visibility: hidden;
+        }
+    </style>
+-->
+</head>
+<a-assets>
+
+      <img id="sertifikat-merek1" src="./assets/sertifikat-merek1.jpg">
+      
+<a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+</a-assets>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+    <a-scene embedded vr-mode-ui="enabled: false" arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+
+
+        <!-- handle matrix marker -->
+       		<a-marker type='barcode' value='46'>
+       					<a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+       					<a-plane line__10="start: -0.3 0 0; end: 2 0 0; color:#FF6100;" opacity="0"></a-plane>
+       					<a-circle color="red" radius="0.3" position="-2 1.5 0" >
+       					<a-text width="8" value="01" color="black" align="center" postion="0 0 0.1"></a-text>
+       					</a-circle>
+
+       					<a-text position="-1.6 1.5 0.1" width="7" value="PENELUSURAN MEREK" color="red"></a-text>
+
+       					<a-plane width="3.9" height="1.5" position="0.1 0.5 0.1" color="black">
+       					<a-text position="-1.9 0.2 0.2" width="3.8" value="Sebelum melakukan pendaftaran merek dagang sebaiknya melakukan penelusuran melalui Google atau cek di https://pdki-indonesia.dgip.go.id/ \n
+                Untuk pendaftaran merek dagang bisa ajukan email di website www.dgip.go.id" color="white" ></a-text>
+
+       				</a-plane>
+       				</a-plane>
+       		</a-marker>
+
+       		<a-marker type='barcode' value='49'>
+       					<a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+       					<a-plane line__10="start: -0.3 0 0; end: 2 0 0; color:#FFC500;" opacity="0"></a-plane>
+       					<a-circle color="#FFC500" radius="0.3" position="-2 1.5 0" >
+       					<a-text width="8" value="02" color="black" align="center" position="0 0 0"></a-text>
+       					</a-circle>
+
+       					<a-text position="-1.6 1.5 0" width="7" value="PERSYARATAN PENGAJUAN PERMOHONAN" color="FFC500"></a-text>
+
+       					<a-plane width="3.7" height="2.3" position="0 0.1 0" color="black">
+       					<a-text position="-1.8 0.2 0" width="3.7" value="Persyaratan untuk Registrasi Merek : \n 1. Pemohon mengisi Bidoata diri \n 2. Menyiapkan 30 contoh merek berukuran maks. 9x9 cm dan min. 2x2 cm \n 3. Menyiapkan daftar barang atau jasa yang diberi merek \n 4. Surat Pernyataan kepemilikin dari pemohon \n 5. Surat Kuasa (jika diperlukan) \n 5. Fotokopi KTP pemohon \n 6. Fotokopi NPWP (khusus pemohon perusahaan) " color="white" ></a-text>
+
+       				</a-plane>
+       				</a-plane>
+       		</a-marker>
+
+
+
+       		<a-marker type='barcode' value="33">
+                <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.3 0 0; end: 2 0 0; color:#FF0064;" opacity="0"></a-plane>
+                <a-circle color="#FF0064" radius="0.3" position="-2 1.5 0" >
+                <a-text width="8" value="03" color="white" align="center" position="0 0 0.1"></a-text>
+                </a-circle>
+
+                <a-text position="-1.6 1.5 0" width="7" value="PROSEDUR PENDAFTARAN MEREK" color="#FF0064"></a-text>
+                        
+                <a-plane width="3.5" height="1" position="0.1 0.7 0" color="black">
+                <a-text position="-1.7 0 0" width="3.5" value="Prosedur pendaftaran merek terbagi menjadi dua bagian, yaitu pengajuan merek oleh pemohon langsung dan melalui proses verifikasi yang dilakukan oleh Ditjen HKI" color="white" ></a-text>
+                            
+                </a-plane>
+                </a-plane>
+          </a-marker>
+
+
+           <a-marker type='barcode' value='35'>
+                <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.3 0 0; end: 2 0 0; color:#33eff8;" opacity="0"></a-plane>
+                <a-circle color="cyan" radius="0.3" position="-2 1.5 0" >
+                <a-text width="8" value="04" color="white" align="center" position="0 0 0.1"></a-text>
+                </a-circle>
+
+                <a-text position="-1.6 1.5 0" width="7" value="PEMERIKSAAN FORMALITAS DAN SUBSTANTIF" color="cyan" ></a-text>
+
+                <a-plane width="3.7" height="1.5" position="0.1 0.5 0" color="black">
+                <a-text position="-1.8 0.1 0" width="3.6" value="Pemeriksaan Formalitas Pertama adalah diperiksanya kelengkapan persyaratan registrasi merek tertentu \n jika ada syarat yang kurang lengkap diminta untuk melengkapi dalam waktu 2 bulan \n Pemeriksaan Substantif dilakukan oleh pihak terkait paling lama 9 bulan" color="white" ></a-text>
+                        
+
+                </a-plane>
+                </a-plane>
+
+          </a-marker>
+
+
+           <a-marker type='barcode' value='36'>
+                <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.3 0 0; end: 2 0 0; color:#33eff8;" opacity="0"></a-plane>
+                <a-circle color="#FF8C00" radius="0.3" position="-2 1.5 0" >
+                <a-text width="8" value="05" color="white" align="center" position="0 0 0.1"></a-text>
+                </a-circle>
+
+                <a-text position="-1.6 1.5 0" width="7" value="PENGAJUAN KEBERATAN" color="#FF8C00" ></a-text>
+
+                <a-plane width="3.7" height="1.5" position="0.1 0.5 0" color="black">
+                <a-text position="-1.8 0.1 0" width="3.6" value="Setelah disetujui, 10 hari setelahnya Ditjen HaKI akan mengumumkan permohonan dalam sebuah berita resmi merek \n Pengumuman akan berlangsung selama 3 bulan" color="white" ></a-text>
+                        
+
+                </a-plane>
+                </a-plane>
+
+          </a-marker>
+
+
+           <a-marker type='barcode' value='40'>
+                <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.3 0 0; end: 2 0 0; color:#33eff8;" opacity="0"></a-plane>
+                <a-circle color="#20B2AA" radius="0.3" position="-2 1.5 0" >
+                <a-text width="8" value="06" color="white" align="center" position="0 0 0.1"></a-text>
+                </a-circle>
+
+                <a-text position="-1.6 1.5 0" width="7" value="PEMERIKSAAN KEMBALI" color="#20B2AA " ></a-text>
+
+                <a-plane width="3.7" height="1.5" position="0.1 0.5 0" color="black">
+                <a-text position="-1.8 0.1 0" width="3.6" value="Apabila Pemohon merasa keberatan maka Ditjen HaKI menggunakan keberatan tersebut sebagai pertimbangan untuk mengadakan pemeriksaan terhadap pemohon dalam jangka waktu paling lama 2 bulan \n Jika tidak ada masalah Ditjen HaKI akan menerbitkan dan memberikan Sertifikat merek kepada Pemohon dalam waktu paling lama 30 hari" color="white" ></a-text>
+                        
+
+                </a-plane>
+                </a-plane>
+
+          </a-marker>
+        
+          <a-marker type='barcode' value='1'>
+                    
+                    <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">s                
+                    <a-plane width="4.2" height="1" position="1.7 -0.7 0" color="white">
+                    <a-text position="-2 0 0.1" width="4" value="Arahkan kamera Smartphone Anda ke marker yang tersedia untuk menampilkan informasi Augmented Reality" color="black" ></a-text>
+                    </a-plane>
+
+          </a-marker>
+
+
+          <a-marker type='barcode' value='12'>
+                 <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                 <a-image src="#sertifikat-merek1" align="center" position="0 0 0.1" width="2" height="3"></a-image>
+                 </a-plane>
+
+           </a-marker>
+        
+
+        <!-- add a simple camera -->
+        <a-entity camera></a-entity>
+        
+
+    </a-scene>
+</body>
+
+</html>

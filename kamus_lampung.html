@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kamus Lampung </title>
+    <script src="aframe/library/aframe.min.js"></script>
+    <!-- include aframe-ar.js -->
+    <script src="aframe/library/aframe-ar.js"></script>
+    <!-- include text geometry -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <!-- Hide Debug UI -->
+    <!--
+    <style>
+        #arjsDebugUIContainer {
+            display: none;
+            visibility: hidden;
+        }
+    </style>
+-->
+</head>
+
+<a-assets>
+  <a-asset-item id="mp4" src="kamus_lampung.mp4"></a-asset-item>
+
+
+<a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+</a-assets>
+
+ <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+    <a-scene embedded vr-mode-ui="enabled: true" arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+
+<a-entity camera></a-entity>
+
+<!-- Video -->
+            <a-marker type='barcode' value='19'>
+                  <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                  <a-image src="#mp4" align="center" position="0 0 0.1" width="3" height="3"></a-image>
+                  </a-plane>
+
+                </a-marker>
+
+
+        <!-- add a simple camera -->      
+        <a-entity camera></a-entity>
+        
+
+    </a-scene>
+</body>
+
+</html>
+
+
+
+
+
+       						
+
+
+
+
+                            
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+

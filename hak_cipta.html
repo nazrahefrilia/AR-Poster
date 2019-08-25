@@ -29,6 +29,7 @@
       <img id="bulat7" src="./assets/bulat7.jpg">
       <img id="bundar1" src="./assets/bundar1.jpg">
       <img id="sertifikat-hak-cipta" src="./assets/sertifikat-hak-cipta.jpg">
+      <a-asset-item id="mp4" src="kamus_lampung.mp4"></a-asset-item>
 
 
 <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
@@ -190,9 +191,17 @@
                   <a-image src="#sertifikat-hak-cipta" align="center" position="0 0 0.1" width="2" height="3"></a-image>
                   </a-plane>
 
-
                 </a-marker>
+                
+                
+    <!-- Video -->
+              <a-marker type='barcode' value='19'>
+                <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                <a-image src="#mp4" align="center" position="0 0 0.1" width="3" height="3"></a-image>
+                </a-plane>
 
+              </a-marker>
+                
         <!-- handle kanji marker -->
         <a-marker preset='kanji'>
             <a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:green;'>

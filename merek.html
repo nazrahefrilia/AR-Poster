@@ -20,16 +20,12 @@
 </head>
 <a-assets>
 
-    <img id="bulat2" src="./assets/bulat2.jpg">
-    <img id="bulat3" src="./assets/bulat3.jpg">
     <img id="bulat4" src="./assets/bulat4.jpg">
     <img id="bulat8" src="./assets/bulat8.jpg"> 
     <img id="bulat6" src="./assets/bulat6.jpg">
-    <img id="bulat9" src="./assets/bulat9.jpg">
     <img id="bundar1" src="./assets/bundar1.jpg">
-    <img id="bundar2" src="./assets/bundar2.jpg">
-    <img id="bundar6" src="./assets/bundar6.jpg">  
-    <img id="bundar8" src="./assets/bundar8.jpg">
+    <img id="bundar2" src="./assets/bundar2.jpg"> 
+    <img id="bundar3" src="./assets/bundar3.jpg">
     <img id="bundar9" src="./assets/bundar9.jpg">
     <img id="sertifikat-merek1" src="./assets/sertifikat-merek1.jpg">
 
@@ -129,20 +125,19 @@
 
         <a-marker type='barcode' value='40'>
                 <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.3 0 0; end: 2 0 0; color:#33eff8;" opacity="0"></a-plane>
-                <a-circle color="#20B2AA" radius="0.3" position="-2 1.5 0" >
+                <a-plane line__10="start: -0.1 0 0; end: 3.9 0 0; color:#FF6100;" opacity="0"></a-plane>
+                <a-circle src="#bundar3" radius="1" position="1.9 1.5 0" ></a-circle>
+                <a-circle color="#FF6100" radius="0.3" position="0.5 2.2 0.2" >
                 <a-text width="8" value="06" color="white" align="center" position="0 0 0.1"></a-text>
             </a-circle>
 
-                <a-text position="-1.6 1.5 0" width="7" value="PEMERIKSAAN KEMBALI" color="#20B2AA " ></a-text>
-                <a-plane width="3.7" height="1.5" position="0.1 0.5 0" color="black">
-                <a-text position="-1.8 0.1 0" width="3.6" value="Apabila Pemohon merasa keberatan maka Ditjen HaKI menggunakan keberatan tersebut sebagai pertimbangan untuk mengadakan pemeriksaan terhadap pemohon dalam jangka waktu paling lama 2 bulan \n Jika tidak ada masalah Ditjen HaKI akan menerbitkan dan memberikan Sertifikat merek kepada Pemohon dalam waktu paling lama 30 hari" color="white" ></a-text>
-                        
+                <a-text position="0 0.3 0.2" width="7" value="PEMERIKSAAN KEMBALI" color="#FF6100" ></a-text>
+                <a-plane width="3.9s" height="1.5" position="1.8 -0.9 0" color="white">
+                <a-text position="-1.8 0.1 0.2" width="3.6" value="Apabila Pemohon merasa keberatan maka Ditjen HaKI menggunakan keberatan tersebut sebagai pertimbangan untuk mengadakan pemeriksaan terhadap pemohon dalam jangka waktu paling lama 2 bulan \n Jika tidak ada masalah Ditjen HaKI akan menerbitkan dan memberikan Sertifikat merek kepada Pemohon dalam waktu paling lama 30 hari" color="black" ></a-text>
+            </a-plane>
+            </a-plane>
 
-                </a-plane>
-                </a-plane>
-
-          </a-marker>
+        </a-marker>
 
         <a-marker type='barcode' value='1'>
                     
@@ -153,13 +148,11 @@
 
         </a-marker>
 
-
-                <a-marker type='barcode' value='12'>
-                  <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
-                  <a-image src="#sertifikat-merek1" align="center" position="0 0 0.1" width="2" height="3"></a-image>
-                  </a-plane>
-
-                </a-marker>
+        <a-marker type='barcode' value='12'>
+                <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                <a-image src="#sertifikat-merek1" align="center" position="0 0 0.1" width="2" height="3"></a-image>
+            </a-plane>
+        </a-marker>
         
 
         <!-- add a simple camera -->

@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html>
 
 <head>
-    <title>Merek </title>
+    <title>Desain Industri </title>
     <script src="aframe/library/aframe.min.js"></script>
     <!-- include aframe-ar.js -->
     <script src="aframe/library/aframe-ar.js"></script>
@@ -20,16 +20,16 @@
 -->
 </head>
 <a-assets>
-
+    <img id="bulat" src="./assets/bulat.jpg">
+    <img id="bulat2" src="./assets/bulat2.jpg">
+    <img id="bulat3" src="./assets/bulat3.jpg">
     <img id="bulat4" src="./assets/bulat4.jpg">
     <img id="bulat8" src="./assets/bulat8.jpg">
     <img id="bulat6" src="./assets/bulat6.jpg">
-    <img id="bundar1" src="./assets/bundar1.jpg">
-    <img id="bundar2" src="./assets/bundar2.jpg">
-    <img id="bundar3" src="./assets/bundar3.jpg">
-    <img id="bundar9" src="./assets/bundar9.jpg">
-    <img id="sertifikat-merek1" src="./assets/sertifikat-merek1.jpg">
-
+    <img id="bulat9" src="./assets/bulat9.jpg">
+    <img id="bundar6" src="./assets/bundar6.jpg">
+    <img id="bundar8" src="./assets/bundar8.jpg">
+    <img id="sertifikat-desain-industri" src="./assets/sertifikat-desain-industri.jpg">
 
     <a-asset-item id="exoItalicFont"
         src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725">
@@ -42,37 +42,18 @@
 
 
         <!-- handle matrix marker -->
-        <a-marker type='barcode' value='46'>
+        <a-marker type='barcode' value='22'>
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 -0.1 0; end: 3.2 -0.1 0; color:#FFFFFF;" opacity="0"></a-plane>
-                <a-circle src="#bundar9" radius="1" position="1.3 1.5 0"></a-circle>
-                <a-circle color="grey" radius="0.3" position="0.1 2.2 0.2">
-                    <a-text width="8" value="01" color="white" align="center" postion="0 0 2"></a-text>
+                <a-plane line__10="start: -0.3 0 0; end: 2.4 0 0; color:#FF6100;" opacity="0"></a-plane>
+                <a-circle src="#bulat" radius="1" position="1.4 1.5 0"></a-circle>
+                <a-circle color="#FF6100" radius="0.3" position="0.1 2.2 0">
+                    <a-text width="8" value="01" color="white" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0.2 0.2" width="7" value="PENELUSURAN MEREK" color="#FFFFFF"></a-text>
-                <a-plane width="3.9" height="1.5" position="1.8 -1 0" color="white">
-                    <a-text position="-1.7 0.1 0.2" width="3.6" value="Sebelum melakukan pendaftaran merek dagang sebaiknya melakukan penelusuran melalui Google atau cek di https://pdki-indonesia.dgip.go.id/ \n
-                Untuk pendaftaran merek dagang bisa ajukan email di website www.dgip.go.id" color="black"></a-text>
-
-                </a-plane>
-            </a-plane>
-        </a-marker>
-
-
-        <a-marker type='barcode' value='49'>
-            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 -0.4 0; end: 3.5 -0.4 0; color:#FFC500;" opacity="0"></a-plane>
-                <a-circle src="#bundar2" radius="1" position="1.3 1.5 0"></a-circle>
-                <a-circle color="#FFC500" radius="0.3" position="0.1 2.2 0.2">
-                    <a-text width="8" value="02" color="white" align="center" position="0 0 0"></a-text>
-                </a-circle>
-
-                <a-text position="0 0 0.2" width="7" value="PERSYARATAN PENGAJUAN \n PERMOHONAN" color="#FFC500">
-                </a-text>
-                <a-plane width="4.1" height="2.3" position="2.0 -1.7 0" color="white">
-                    <a-text position="-1.8 0.2 0.2" width="3.7"
-                        value="Persyaratan untuk Registrasi Merek : \n 1. Pemohon mengisi Bidoata diri \n 2. Menyiapkan 30 contoh merek berukuran maks. 9x9 cm dan min. 2x2 cm \n 3. Menyiapkan daftar barang atau jasa yang diberi merek \n 4. Surat Pernyataan kepemilikin dari pemohon \n 5. Surat Kuasa (jika diperlukan) \n 5. Fotokopi KTP pemohon \n 6. Fotokopi NPWP (khusus pemohon perusahaan)"
+                <a-text position="0 0.2 0.2" width="7" value="DAFTAR AKUN" color="orange"></a-text>
+                <a-plane width="4.2" height="1" position="1.8 -0.7 0" color="white">
+                    <a-text position="-2.0 0.1 0.2" width="4"
+                        value="Registrasi akun Pendaftaran Desain Industri Online \n https://registrasi.dgip.go.id/akun untuk mendapatkan Username dan Password"
                         color="black"></a-text>
 
                 </a-plane>
@@ -80,18 +61,18 @@
         </a-marker>
 
 
-        <a-marker type='barcode' value="33">
+        <a-marker type='barcode' value='21'>
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 -0.4 0; end: 4 -0.4 0; color:#ADD381;" opacity="0"></a-plane>
-                <a-circle src="#bundar1" radius="1" position="1.4 1.5 0"></a-circle>
-                <a-circle color="#ADD381" radius="0.3" position="0.1 2.2 0.2">
-                    <a-text width="8" value="03" color="white" align="center" position="0 0 0.2"></a-text>
+                <a-plane line__10="start: -0.1 0 0; end: 2.2 0 0; color:#FFC500;" opacity="0"></a-plane>
+                <a-circle src="#bulat2" radius="1" position="1.4 1.5 0"></a-circle>
+                <a-circle color="#FFC500" radius="0.3" position="0.1 2.2 0">
+                    <a-text width="8" value="02" color="black" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0 0.2" width="7" value="PROSEDUR PENDAFTARAN \n MEREK" color="#ADD381"></a-text>
-                <a-plane width="3.7" height="1" position="1.8 -1.1 0" color="white">
-                    <a-text position="-1.7 0 0.2" width="3.5"
-                        value="Prosedur pendaftaran merek terbagi menjadi dua bagian, yaitu pengajuan merek oleh pemohon langsung dan melalui proses verifikasi yang dilakukan oleh Ditjen HKI"
+                <a-text position="0 0.2 0.2" width="7" value="UPLOAD FILE" color="yellow"></a-text>
+                <a-plane width="4.1" height="1" position="1.8 -0.7 0" color="white">
+                    <a-text position="-1.9 0.1 0.2" width="4"
+                        value="Pastikan informasi dan upload kelengkapan administrasi dan gambar/foto dan uraian Desain Industri"
                         color="black"></a-text>
 
                 </a-plane>
@@ -99,58 +80,106 @@
         </a-marker>
 
 
-        <a-marker type='barcode' value='35'>
+        <a-marker type='barcode' value='32'>
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 -0.5 0; end: 3.7 -0.5 0; color:#FFFFFF;" opacity="0"></a-plane>
-                <a-circle src="#bulat6" radius="1" position="1.3 1.5 0"></a-circle>
-                <a-circle color="#404040" radius="0.3" position="0.1 2.2 0.2">
-                    <a-text width="8" value="04" color="white" align="center" position="0 0 0.2"></a-text>
+                <a-plane line__10="start: -0.1 0 0; end: 2.2 0 0; color:#FF0064;" opacity="0"></a-plane>
+                <a-circle src="#bulat3" radius="1" position="1.4 1.5 0"></a-circle>
+                <a-circle color="#FF0064" radius="0.3" position="0.1 2.2 0">
+                    <a-text width="8" value="03" color="black" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0 0.2" width="7" value="PEMERIKSAAN FORMALITAS \n DAN SUBSTANTIF" color="#FFFFFF">
-                </a-text>
-                <a-plane width="3.7" height="1.5" position="1.8 -1.5 0" color="white">
-                    <a-text position="-1.8 0.1 0.2" width="3.6"
-                        value="Pemeriksaan Formalitas Pertama adalah diperiksanya kelengkapan persyaratan registrasi merek tertentu \n jika ada syarat yang kurang lengkap diminta untuk melengkapi dalam waktu 2 bulan \n Pemeriksaan Substantif dilakukan oleh pihak terkait paling lama 9 bulan"
-                        color="black"></a-text>
+                <a-text position="0 0.2 0.1" width="7" value="PEMBAYARAN" color="#FF0064"></a-text>
+
+                <a-plane width="3.7" height="1" position="1.7 -0.7 0" color="white">
+                    <a-text position="-1.8 0.1 0.1" width="4"
+                        value="Menerima kode billing dan segera melakukan pembayaran" color="black"></a-text>
 
                 </a-plane>
             </a-plane>
         </a-marker>
 
 
-        <a-marker type='barcode' value='36'>
+        <a-marker type='barcode' value='48'>
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 0 0; end: 3.7 0 0; color:cyan;" opacity="0"></a-plane>
-                <a-circle src="#bulat4" radius="1" position="1.3 1.5 0"></a-circle>
-                <a-circle color="cyan" radius="0.3" position="0.1 2.2 0.2">
-                    <a-text width="8" value="05" color="white" align="center" position="0 0 0.1"></a-text>
+                <a-plane line__10="start: -0.1 0 0; end: 4.3 0 0; color:cyan;" opacity="0"></a-plane>
+                <a-circle src="#bulat4" radius="1" position="1.2 1.4 0"></a-circle>
+                <a-circle color="cyan" radius="0.3" position="-0.1 2.2 0">
+                    <a-text width="8" value="04" color="black" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0.3 0.2" width="7" value="PENGAJUAN KEBERATAN" color="cyan"></a-text>
-                <a-plane width="3.7" height="1.3" position="1.8 -0.9 0" color="white">
-                    <a-text position="-1.8 0.1 0.2" width="3.6"
-                        value="Setelah disetujui, 10 hari setelahnya Ditjen HaKI akan mengumumkan permohonan dalam sebuah berita resmi merek \n Pengumuman akan berlangsung selama 3 bulan"
+                <a-text position="0 0.2 0.1" width="7" value="PEMERIKSAAN FORMALITAS" color="cyan"></a-text>
+                <a-plane width="4.2" height="1.5" position="1.8 -1 0" color="white">
+                    <a-text position="-2.0 0.1 0.2" width="4"
+                        value="Pemeriksaan Formalitas berlangsung maks. 30 hari kerja terhitung sejak tanggal penerimaan, apabila ada kekurangan data Pemeriksaan Formalitas, pemohon diberi waktu 3 bulan untuk melengkapi, pemohon diberi tambahan waktu 1 bulan apabila mengajukan permohonan"
                         color="black"></a-text>
                 </a-plane>
             </a-plane>
-
         </a-marker>
 
-        <a-marker type='barcode' value='40'>
+        <a-marker type='barcode' value='30'>
+
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 0 0; end: 3.9 0 0; color:#FF6100;" opacity="0"></a-plane>
-                <a-circle src="#bundar3" radius="1" position="1.3 1.5 0"></a-circle>
-                <a-circle color="#FF6100" radius="0.3" position="0.1 2.2 0.2">
+                <a-plane line__10="start: -0.1 -0.1 0; end: 2.9 -0.1 0; color:#FFFFFF;" opacity="0"></a-plane>
+                <a-circle src="#bundar6" radius="0" position="0.9 1.4 0"></a-circle>
+                <a-circle color="#610B58" radius="0.3" position="-0.5 2.2 0">
+                    <a-text width="8" value="05" color="#FFFFFF" align="center" position="0 0 0.1"></a-text>
+                </a-circle>
+
+                <a-text position="0 0.2 0.1" width="7" value="PUBLIKASI" color="#FFFFFF"></a-text>
+
+                <a-plane width="4.3" height="1.2" position="1.7 -0.7 1" color="white">
+                    <a-text position="-2 0.1 0.2" width="4"
+                        value="Pengumuman setelah kelengkapan formalitas selama 3 bulan untuk mengetahui apakah ada keberatan dari pihak oposisi terkait Desain Industri yang dimohonkan"
+                        color="black"></a-text>
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
+
+        <a-marker type='barcode' value='14'>
+
+            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 0 0; end: 4.1 0 0; color:#FFFFFF;" opacity="0"></a-plane>
+                <a-circle src="#bulat6" radius="1" position="1.3 1.4 0"></a-circle>
+                <a-circle color="#606060" radius="0.3" position="0.1 2.2 0">
                     <a-text width="8" value="06" color="white" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0.3 0.2" width="7" value="PEMERIKSAAN KEMBALI" color="#FF6100"></a-text>
-                <a-plane width="3.9s" height="1.5" position="1.8 -0.9 0" color="white">
-                    <a-text position="-1.8 0.1 0.2" width="3.6"
-                        value="Apabila Pemohon merasa keberatan maka Ditjen HaKI menggunakan keberatan tersebut sebagai pertimbangan untuk mengadakan pemeriksaan terhadap pemohon dalam jangka waktu paling lama 2 bulan \n Jika tidak ada masalah Ditjen HaKI akan menerbitkan dan memberikan Sertifikat merek kepada Pemohon dalam waktu paling lama 30 hari"
-                        color="black"></a-text>
+                <a-text position="0 0.2 0.1" width="7" value="PEMERIKSAAN SUBSTANTIF" color="#FFFFFF"></a-text>
+
+                <a-plane width="4.2" height="1" position="1.9 -0.7 0" color="white">
+                    <a-text position="-1.9 0.1 0.2" width="4"
+                        value="Pemeriksaan Substantif dilakukan maks. 6 bulan pada hari kerja" color="black"></a-text>
+
                 </a-plane>
+            </a-plane>
+        </a-marker>
+
+        <a-marker type='barcode' value='18'>
+
+            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 0 0; end: 2.5 0 0; color:#C8FF1F;" opacity="0"></a-plane>
+                <a-circle src="#bundar8" radius="1" position="1.3 1.4 0"></a-circle>
+                <a-circle color="#C8FF1F" radius="0.3" position="0.1 2.2 0">
+                    <a-text width="8" value="07" color="white" align="center" position="0 0 0.1"></a-text>
+                </a-circle>
+
+                <a-text position="0 0.2 0.1" width="7" value="REKOMENDASI" color="#C8FF1F"></a-text>
+
+                <a-plane width="3.7" height="1.2" position="1.7 -0.7 0" color="white">
+                    <a-text position="-1.7 0.1 0.2 " width="4"
+                        value="Permohonan Desain Industri akan diberi rekomendasi berupa : \n 1.Pemberian \n 2.Penolakan \n 3.Penarikan kembali"
+                        color="black"></a-text>
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
+
+
+        <a-marker type='barcode' value='16'>
+            <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                <a-image src="#sertifikat-desain-industri" align="center" position="0.1 0.5 0" width="2" height="3">
+                </a-image>
             </a-plane>
 
         </a-marker>
@@ -166,15 +195,20 @@
 
         </a-marker>
 
-        <a-marker type='barcode' value='12'>
-            <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
-                <a-image src="#sertifikat-merek1" align="center" position="0 0 0.1" width="2" height="3"></a-image>
-            </a-plane>
-        </a-marker>
 
+        <!-- handle kanji marker -->
+        <a-marker preset='kanji'>
+            <a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:green;'>
+                <a-torus-knot radius='0.26' radius-tubular='0.05'>
+                    <a-animation attribute="rotation" to="360 0 0" dur="5000" easing='linear' repeat="indefinite">
+                    </a-animation>
+                </a-torus-knot>
+            </a-box>
+        </a-marker>
 
         <!-- add a simple camera -->
         <a-entity camera></a-entity>
+
 
     </a-scene>
 </body>

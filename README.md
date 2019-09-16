@@ -1,2 +1,0 @@
-# AR
-Contoh Augmented Reality

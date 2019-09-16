@@ -42,30 +42,13 @@
 
 
         <!-- handle matrix marker -->
-        <a-marker type='barcode' value='46'>
-            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 -0.1 0; end: 3.2 -0.1 0; color:#FFFFFF;" opacity="0"></a-plane>
-                <a-circle src="#bundar9" radius="1" position="1.3 1.5 0"></a-circle>
-                <a-circle color="grey" radius="0.3" position="0.1 2.2 0.2">
-                    <a-text width="8" value="01" color="white" align="center" postion="0 0 2"></a-text>
-                </a-circle>
-
-                <a-text position="0 0.2 0.2" width="7" value="PENELUSURAN MEREK" color="#FFFFFF"></a-text>
-                <a-plane width="3.9" height="1.5" position="1.8 -1 0" color="white">
-                    <a-text position="-1.7 0.1 0.2" width="3.6" value="Sebelum melakukan pendaftaran merek dagang sebaiknya melakukan penelusuran melalui Google atau cek di https://pdki-indonesia.dgip.go.id/ \n
-                Untuk pendaftaran merek dagang bisa ajukan email di website www.dgip.go.id" color="black"></a-text>
-
-                </a-plane>
-            </a-plane>
-        </a-marker>
-
 
         <a-marker type='barcode' value='49'>
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
                 <a-plane line__10="start: -0.1 -0.4 0; end: 3.5 -0.4 0; color:#FFC500;" opacity="0"></a-plane>
                 <a-circle src="#bundar2" radius="1" position="1.3 1.5 0"></a-circle>
                 <a-circle color="#FFC500" radius="0.3" position="0.1 2.2 0.2">
-                    <a-text width="8" value="02" color="white" align="center" position="0 0 0"></a-text>
+                    <a-text width="8" value="01" color="white" align="center" position="0 0 0"></a-text>
                 </a-circle>
 
                 <a-text position="0 0 0.2" width="7" value="PERSYARATAN PENGAJUAN \n PERMOHONAN" color="#FFC500">
@@ -85,7 +68,7 @@
                 <a-plane line__10="start: -0.1 -0.4 0; end: 4 -0.4 0; color:#ADD381;" opacity="0"></a-plane>
                 <a-circle src="#bundar1" radius="1" position="1.4 1.5 0"></a-circle>
                 <a-circle color="#ADD381" radius="0.3" position="0.1 2.2 0.2">
-                    <a-text width="8" value="03" color="white" align="center" position="0 0 0.2"></a-text>
+                    <a-text width="8" value="02" color="white" align="center" position="0 0 0.2"></a-text>
                 </a-circle>
 
                 <a-text position="0 0 0.2" width="7" value="PROSEDUR PENDAFTARAN \n MEREK" color="#ADD381"></a-text>
@@ -98,6 +81,24 @@
             </a-plane>
         </a-marker>
 
+        <a-marker type='barcode' value='31'>
+            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 -0.5 0; end: 3.7 -0.5 0; color:#FFFFFF;" opacity="0"></a-plane>
+                <a-circle src="#bulat6" radius="1" position="1.3 1.5 0"></a-circle>
+                <a-circle color="#404040" radius="0.3" position="0.1 2.2 0.2">
+                    <a-text width="8" value="04" color="white" align="center" position="0 0 0.2"></a-text>
+                </a-circle>
+
+                <a-text position="0 0 0.2" width="7" value="PEMERIKSAAN FORMALITAS" color="#FFFFFF">
+                </a-text>
+                <a-plane width="3.7" height="1.5" position="1.8 -1.5 0" color="white">
+                    <a-text position="-1.8 0.1 0.2" width="3.6"
+                        value="Pemeriksaan Formalitas Pertama adalah diperiksanya kelengkapan persyaratan registrasi merek tertentu. Pastikan Anda sudah melengkapi seluruh persyaratan yang diminta oleh Ditjen HKI, karena jika ada syarat yang kurang lengkap, maka pihak Ditjen HKI akan meminta kelengkapannya dalam waktu 2 bulan, sejak surat permintaan pertama diterima."
+                        color="black"></a-text>
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
 
         <a-marker type='barcode' value='35'>
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
@@ -107,11 +108,11 @@
                     <a-text width="8" value="04" color="white" align="center" position="0 0 0.2"></a-text>
                 </a-circle>
 
-                <a-text position="0 0 0.2" width="7" value="PEMERIKSAAN FORMALITAS \n DAN SUBSTANTIF" color="#FFFFFF">
+                <a-text position="0 0 0.2" width="7" value="PEMERIKSAAN SUBSTANTIF" color="#FFFFFF">
                 </a-text>
-                <a-plane width="3.7" height="1.5" position="1.8 -1.5 0" color="white">
+                <a-plane width="3.7" height="2.1" position="1.8 -1.7 0" color="white">
                     <a-text position="-1.8 0.1 0.2" width="3.6"
-                        value="Pemeriksaan Formalitas Pertama adalah diperiksanya kelengkapan persyaratan registrasi merek tertentu \n jika ada syarat yang kurang lengkap diminta untuk melengkapi dalam waktu 2 bulan \n Pemeriksaan Substantif dilakukan oleh pihak terkait paling lama 9 bulan"
+                        value="Dalam waktu paling lama 30 hari terhitung sejak tanggal penerimaan permohonan pendaftaran merek, Ditjen HKI akan melakukan pemeriksaan substantif terhadap permohonan merek. Pemeriksaan ini melingkupi apakah permohonan tersebut termasuk ke dalam kategori yang dimohonkan atau tidak, apakah sudah ada merek yang sama terdaftar di kelas produk yang sama atau tidak. Untuk proses ini, Ditjen HKI memberikan waktu pemeriksaan paling lama 9 bulan"
                         color="black"></a-text>
 
                 </a-plane>
@@ -127,10 +128,10 @@
                     <a-text width="8" value="05" color="white" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0.3 0.2" width="7" value="PENGAJUAN KEBERATAN" color="cyan"></a-text>
-                <a-plane width="3.7" height="1.3" position="1.8 -0.9 0" color="white">
+                <a-text position="0 0.3 0.2" width="7" value="MASA SANGGAH" color="cyan"></a-text>
+                <a-plane width="3.7" height="2.1" position="1.8 -1.2 0" color="white">
                     <a-text position="-1.8 0.1 0.2" width="3.6"
-                        value="Setelah disetujui, 10 hari setelahnya Ditjen HaKI akan mengumumkan permohonan dalam sebuah berita resmi merek \n Pengumuman akan berlangsung selama 3 bulan"
+                        value="Setelah disetujui, dalam waktu paling lama 10 hari terhitung sejak tanggal disetujuinya permohonan merek pada proses pemeriksaan substantif, Ditjen HKI mengumumkan permohonan tersebut dalam Berita Resmi Merek. Pengumuman ini berlangsung selama 3 bulan.  Pastikan selalu mengecek secara berkala mengenai hal ini. Apabila pihak pemohon merasa keberatan, pemohon dapat mengajukan keberatan secara tertulis kepada Ditjen HKI paling lama 2 bulan sejak tanggal penerimaan salinan keberatan."
                         color="black"></a-text>
                 </a-plane>
             </a-plane>

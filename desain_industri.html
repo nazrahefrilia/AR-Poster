@@ -40,42 +40,68 @@ DOCTYPE html>
 
         <!-- handle matrix marker -->
         <a-marker type='barcode' value='22'>
-            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 0 0; end: 3.0 0 0; color:#FF6100;" opacity="0"></a-plane>
+            <a-plane position="-1 0 2.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 0 0; end: 4.5 0 0; color:#FF6100;" opacity="0"></a-plane>
                 <a-circle src="#bundar3" radius="1" position="1.4 1.5 0"></a-circle>
                 <a-circle color="#FF6100" radius="0.3" position="0.1 2.2 0">
                     <a-text width="8" value="01" color="white" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0.3 0.2" width="7" value="PERSIAPAN BERKAS" color="#FF6100"></a-text>
-                <a-plane width="4.2" height="1" position="1.8 -0.7 0" color="white">
-                    <a-text position="-2.0 0.1 0.2" width="4"
-                        value="Permohonan pendaftaran Desain Industri diajukan dengan cara mengisi formulir yang disediakan untuk itu dalam bahasa Indonesia dan diketik rangkap 3 (tiga)."
+                <a-text position="0 0.3 0.2" width="7" value="PERSIAPAN BERKAS (SYARAT)" color="#FF6100"></a-text>
+                <a-plane width="4.2" height="3.7" position="2.0 -2.1 0" color="white">
+                    <a-text position="-2.0 0.1 0.2" width="4" value="1. Judul Desain Industri/Sirkuit
+                        2. Jenis Klaim (berdasarkan kategori berikut)
+                        a. bentuk
+                        b. Konfigurasi (jika desain sirkuit, wajib pilih ini)
+                        c. Komposisi garis
+                        d. Komposisi warna
+                        3. Kegunaan (deskripsi singkat 1 paragraf, sekitar 1-5 kalimat)
+                        4. Jumlah desain (jika lebih dari 1)
+                        5. Tanggal dan tempat (kota, negara) diumumkan pertama kali
+                        6. Klasifikasi berdasarkan Locarno Classification http://www.wipo.int/classifications/locarno/en/  (misal: 103401 Board games), bisa lebih dari satu. \n 
+                        Informasi yang diperlukan di atas dapat dikirimkan via email atau dalam berkas teks/doc/odt"
                         color="black"></a-text>
 
                 </a-plane>
             </a-plane>
         </a-marker>
 
+        <a-marker type='barcode' value='29'>
+            <a-plane position="-1 0 2.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 0 0; end: 4.5 0 0; color:#FF6100;" opacity="0"></a-plane>
+                <a-circle src="#bundar3" radius="1" position="1.4 1.5 0"></a-circle>
+                <a-circle color="#FF6100" radius="0.3" position="0.1 2.2 0">
+                    <a-text width="8" value="01" color="white" align="center" position="0 0 0.1"></a-text>
+                </a-circle>
+
+                <a-text position="0 0.3 0.2" width="7" value="PERSIAPAN BERKAS (DOKUMEN)" color="#FF6100"></a-text>
+                <a-plane width="4.2" height="2.4" position="2.0 -1.3 0" color="white">
+                    <a-text position="-2.0 0.1 0.2" width="4" value="Dokumen yang harus disiapkan adalah: \n
+                        1. Scan KTP Pemohon dan Pendesain (PDF, PNG)
+                        2. Scan NPWP perorangan/perusahaan (PDF, PNG)
+                        3. Scan Pernyataan Kepemilikian Desain (Menyatakan Desain tersebut asli) (PDF, PNG)
+                        4. Gambar Desain Industri (JPG, PNG) boleh lebih dari satu
+                        5. Deskripsi Desain Industri (DOC, ODT, PDF)
+                        6. Bukti Pengalihan Desain Industri/Sirkuit (Apabila Pemohon Bukan Pendesain(PDF, PNG)"
+                        color="black"></a-text>
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
 
         <a-marker type='barcode' value='21'>
-            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 -0.1 0; end: 3.9 -0.1 0; color:#C4EB2A;" opacity="0"></a-plane>
+            <a-plane position="-1 0 2.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 -0.1 0; end: 4.3 -0.1 0; color:#C4EB2A;" opacity="0"></a-plane>
                 <a-circle src="#bulat5" radius="1" position="1.4 1.5 0"></a-circle>
                 <a-circle color="#C4EB2A" radius="0.3" position="0.1 2.2 0">
                     <a-text width="8" value="02" color="black" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
                 <a-text position="0 0.2 0.2" width="7" value="PENGAJUAN PERMOHONAN" color="#C4EB2A"></a-text>
-                <a-plane width="4.1" height="2.2" position="1.8 -1.5 0" color="white">
+                <a-plane width="4.3" height="1.5" position="2 -1.0 0" color="white">
                     <a-text position="-1.9 0.1 0.2" width="4"
-                        value="Pemohon wajib melampirkan :
-                        1. tanggal, bulan, dan tahun surat Permohonan
-                        2. nama, alamat lengkap, dan kewarganegaraan Pendesain
-                        3. nama, alamat lengkap, dan kewarganegaraan Pemohon
-                        4. nama dan alamat lengkap Kuasa apabila Permohonan diajukan melalui Kuasa
-                        5. nama negara dan tanggal penerimaan permohonan yang pertama kali, dalam hal Permohonan diajukan dengan Hak Prioritas"
-                        color="black"></a-text>
+                        value="Perlindungan Desain Industri berlaku selama 10 tahun \n
+                        Data Pendesain harus mencantumkan nama, email, alamat, kota, kode pos, provinsi, negara, dan no telp" color="black"></a-text>
 
                 </a-plane>
             </a-plane>
@@ -84,20 +110,18 @@ DOCTYPE html>
 
         <a-marker type='barcode' value='32'>
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 0 0; end: 4.2 0 0; color:#FF9933" opacity="0"></a-plane>
+                <a-plane line__10="start: -0.1 -0.2 0; end: 5.2 -0.2 0; color:#FF9933" opacity="0"></a-plane>
                 <a-circle src="#bundar2" radius="1" position="1.4 1.5 0"></a-circle>
                 <a-circle color="#FF9933" radius="0.3" position="0.1 2.2 0">
                     <a-text width="8" value="03" color="white" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0.2 0.1" width="7" value="PEMERIKSAAN FORMALITAS" color="#FF9933"></a-text>
+                <a-text position="0 0.2 0.1" width="9" value="PEMERIKSAAN FORMALITAS" color="#FF9933"></a-text>
 
-                <a-plane width="4.1" height="2.8" position="1.9 -1.6 0" color="white">
-                    <a-text position="-1.9 0 0.2" width="4"
-                        value="Permohonan ditandatangani oleh Pemohon atau Kuasanya serta dilampiri dengan:
-                        1. contoh fisik atau gambar atau foto dan uraian dari Desain Industri yang dimohonkan pendaftarannya (untuk mempermudah proses pengumuman permohonan, sebaiknya bentuk gambar atau foto tersebut dapat di-scan, atau dalam bentuk disket atau floppy disk dengan program sesuai)
-                        2. surat kuasa khusus, dalam hal Permohonan diajukan melalui Kuasa
-                        3. surat pernyataan bahwa Desain Industri yang dimohonkan pendaftarannya adalah milik Pemohon atau milik Pendesain" color="black">
+                <a-plane width="8.5" height="2.5" position="3.5 -1.8 0" color="white">
+                    <a-text position="-3.9 0.1 0.3" width="8" value="Lampirkan bersama email contoh dokumen yang harus disiapkan dalam pendaftaran desain industri/sirkuit \n
+                        1. Uraian untuk penjelasan desain industri/sirkuit
+                        2. Gambar untuk gambar desain industri/sirkuit" color="black">
                     </a-text>
 
                 </a-plane>
@@ -105,57 +129,20 @@ DOCTYPE html>
         </a-marker>
 
 
-        <a-marker type='barcode' value='31'>
-            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 0 0; end: 2.3 0 0; color:#FFFFFF;" opacity="0"></a-plane>
-                <a-circle src="#bundar6" radius="1" position="1.2 1.4 0"></a-circle>
-                <a-circle color="#610B58" radius="0.3" position="-0.1 2.2 0">
-                    <a-text width="8" value="04" color="white" align="center" position="0 0 0.1"></a-text>
-                </a-circle>
-
-                <a-text position="0 0.2 0.1" width="7" value="PUBLIKASI" color="#FFFFFF"></a-text>
-                <a-plane width="4.2" height="1.1" position="1.8 -0.7 0" color="white">
-                    <a-text position="-2.0 0.1 0.2" width="4"
-                        value="Dalam hal Permohonan diajukan secara bersama-sama oleh lebih dari satu Pemohon, Permohonan tersebut ditandatangani oleh salah satu Pemohon dengan melampirkan persetujuan tertulis dari para Pemohon lain"
-                        color="black"></a-text>
-                </a-plane>
-            </a-plane>
-        </a-marker>
-
-        <a-marker type='barcode' value='30'>
-
-            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 -0.1 0; end: 3.9 -0.1 0; color:#FFFFFF;" opacity="0"></a-plane>
-                <a-circle src="#bulat6" radius="0" position="0.9 1.4 0"></a-circle>
-                <a-circle color="#606060" radius="0.3" position="-0.5 2.2 0">
-                    <a-text width="8" value="05" color="#FFFFFF" align="center" position="0 0 0.1"></a-text>
-                </a-circle>
-
-                <a-text position="0 0.2 0.1" width="7" value="PEMERIKSAAN SUBSTANTIF" color="#FFFFFF"></a-text>
-
-                <a-plane width="4.3" height="1.2" position="2 -0.9 0" color="white">
-                    <a-text position="-2 0.1 0.2" width="4"
-                        value="Dalam hal Permohonan diajukan oleh bukan Pendesain, Permohonan harus disertai pernyataan yang dilengkapi dengan bukti yang cukup bahwa Pemohon berhak atas Desain Industri yang bersangkutan"
-                        color="black"></a-text>
-
-                </a-plane>
-            </a-plane>
-        </a-marker>
-
         <a-marker type='barcode' value='14'>
 
             <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
-                <a-plane line__10="start: -0.1 -0.1 0; end: 2.2 -0.1 0; color:#EB117E;" opacity="0"></a-plane>
+                <a-plane line__10="start: -0.1 -0.1 0; end: 4.9 -0.1 0; color:#EB117E;" opacity="0"></a-plane>
                 <a-circle src="#bulat3" radius="1" position="1.3 1.4 0"></a-circle>
                 <a-circle color="#EB117E" radius="0.3" position="0.1 2.2 0">
-                    <a-text width="8" value="06" color="white" align="center" position="0 0 0.1"></a-text>
+                    <a-text width="8" value="04" color="white" align="center" position="0 0 0.1"></a-text>
                 </a-circle>
 
-                <a-text position="0 0.2 0.1" width="7" value="PEMBAYARAN" color="#EB117E"></a-text>
+                <a-text position="0 0.2 0.1" width="9" value="INFORMASI PEMBAYARAN" color="#EB117E"></a-text>
 
-                <a-plane width="4.2" height="1" position="1.9 -0.7 0" color="white">
-                    <a-text position="-1.9 0.1 0.2" width="4"
-                        value="Membayar biaya permohonan sebesar Rp 300.000,00 untuk Usaha Kecil dan Menengah (UKM) serta Rp 600.000,00 untuk non-UKM untuk setiap permohonan."
+                <a-plane width="6.5" height="2.5" position="2.5 -1.8 0" color="white">
+                    <a-text position="-3.0 0.1 0.2" width="8"
+                        value="Membayar biaya permohonan sebesar \n Rp 300.000,00 untuk Usaha Kecil dan \n Menengah (UKM) serta Rp 600.000,00 \n non-UKM untuk setiap permohonan."
                         color="black"></a-text>
 
                 </a-plane>
@@ -174,9 +161,9 @@ DOCTYPE html>
         <a-marker type='barcode' value='1'>
 
             <a-plane position="0 2 0" opacity="0" rotation="-90 0 0">s
-                <a-plane width="4.2" height="1" position="1.4 -0.1 0" color="white">
-                    <a-text position="-2 0 0.1" width="4"
-                        value="Arahkan kamera Smartphone Anda ke marker yang tersedia untuk menampilkan informasi Augmented Reality"
+                <a-plane width="7.2" height="3" position="0 -0.1 0" color="white">
+                    <a-text position="-3.5 0 0.3" width="10"
+                        value="Arahkan kamera Smartphone Anda \n ke marker yang tersedia \n untuk menampilkan \n informasi Augmented Reality"
                         color="black"></a-text>
                 </a-plane>
 
